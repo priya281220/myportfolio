@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        
+        .d1{
+    width: 100%;
+    background:url('imagesweb/decorbutter.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+   animation:animateBg 5s linear infinite;
+}
+
+
+@keyframes animateBg{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+    }*/
+
+         .contact{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 3rem;
+        padding-left: 30px;
+        margin-top: 130px;
+    
+    }
+     .contact-text h2{
+        font-size: 60px;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    .contact-text h2 span{
+        color:white;
+    }
+    .contact-text h4{
+        margin: 15px 0;
+        color:white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .contact-text p{
+        color: white;
+         font-size: 20px;
+         line-height: 30px;
+         margin-bottom: 2rem;
+    }
+    
+    .contact-list{
+        margin-bottom: 3rem;
+    }
+    .contact-list li{
+        margin-bottom: 10px;
+        display: block;
+    }
+    
+    .contact-list li{
+        margin-bottom: 10px;
+        display: block;
+    }
+    .contact-list i{
+        display: inline-block;
+        color:WHITE;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all .40s ease;
+    }
+    .contact-list p a:hover{
+        transform: scale(1.01) translateY(-5px);
+        color: rgb(243, 236, 223);
+    }
+    .contact-icons i{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid white;
+        color:white;
+        text-decoration: none;
+        border-radius: 50%;
+        font-size: 20px;
+        margin: .5s ease;
+       /*opacity: 0;
+        animation: slideleft 1s ease forwards;
+        animation-delay: calc(.2s var(--i));*/
+    } 
+    .contact-icons i:hover{
+        background: rgb(220, 253, 144);
+        color: #a710c5;
+        box-shadow: 0 0 20px rgb(46, 135, 170);
+    }
+    
+    .contact-form form{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .contact-form form input,form textarea{
+        border:none;
+        outline: none;
+        width:90% ;
+        padding: 18px;
+        background: #4b7a7a;
+        color: WHITE;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .contact-form textarea{
+        resize: none;
+        height: 220px;
+        COLOR:WHITE;
+    
+    }
+    .contact-form form .send{
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: rgb(133, 173, 67);
+        border-radius: 40px;
+        font-size: 18px;
+         color:#5d0e70;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideTop .5s ease forwards;
+        animation-delay: 2s ;
+        box-shadow: 0 0 5px #0ef,
+        0 0 25px cyan,0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+    }
+    
+    .contact-form form .send:hover{
+        box-shadow: 0 0 5px rgb(191, 245, 245),
+        0 0 25px rgb(255, 0, 234),0 0 50px rgb(101, 4, 121),
+        0 0 100px rgb(242, 157, 245), 0 0 200px rgb(101, 4, 131)
+    }
+    
+    .last-text p{
+        width: 100%;
+        text-align: center;
+        padding:25px 0;
+        background:white;
+        font-size: 300;
+        margin-top: 70px;
+    }
+    .top{
+        position: fixed;
+        bottom: 2.1rem;
+        right: 2,1rem;
+    
+    }
+    .top i{
+        color: white;
+        background: #0ef;
+        font-size: 20px;
+        padding: 10px;
+        border-radius:0.5rem ;
+    }
+    .btn.btn2{
+        display: inline-block;
+        background:#0ef;
+        display: inline-block;
+        background-color:#0ef;
+        padding: 12px 28px;
+        color: WHITE;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideTop .5s ease forwards;
+        animation-delay: 2s ;
+       /* box-shadow: 0 0 20px #0ef,
+        0 0 25px cyan,0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan*/
+    }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="d1">
+    <div class="contact" id="contact">
+        <div class="contact-text">
+            <h2><span>Contact Me</span></h2>
+            <h4>Let's work Together</h4>
+            <p>This is my learning phase and i will be very happy if you may give your advice <BR>and guidance as well.Because i believe in the saying of RABINDRANATH TAGORE<BR>
+                "A LAMP CAN NEVER LIGHT ANOTHER LAMP UNTIL IT CONTINUES TO BURN ITS OWN FLAME"<br><br><br><br><br><br>
+                <small>priyachoudhary2812@gnail.com<br>
+                90XXXXXXXX</small>
+
+            </p>
+            <div class="contact-list">
+                <div class="contact-icons">
+                    <a href="#" style="--1:8"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea placeholder=" your Message" name="message" id="message" cols="60" rows="8"></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
+
+        </div>
+    </div>
+    
+</section>
+<div class="last-text">
+    <p><h1><large>LEARNING GOING ON!</large></h1></p>
+</div>
+<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+</html>
+<script src="main.js"></script>
+</section>
+</div>
+</BODY>
+</HTML>
