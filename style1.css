@@ -345,20 +345,18 @@ ul li a:hover{
 }
 
 
-
-
 .form {
-    width: 90%; /* Adjusted width for smaller screens */
-    max-width: 300px; /* Maximum width for smaller screens */
-    height: auto; /* Adjust height to fit content */
+    width: 250px; /* Adjusted width */
+    height: 380px;
     background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
-    position: relative; /* Change position to relative */
-    margin: auto; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Center vertically */
-    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjusted positioning */
+    transform: translateY(-50%); /* Centering vertically */
+    border-radius: 20px; /* Adjusted border radius */
     padding: 25px;
 }
+
 /* Adjusted for responsive */
 @media screen and (max-width: 600px) {
     .form {
@@ -366,49 +364,5 @@ ul li a:hover{
         max-width: 300px; /* Maximum width for smaller screens */
         right: 50%; /* Adjusted positioning for smaller screens */
         transform: translate(50%, -50%); /* Centering horizontally for smaller screens */
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.main {
-    width: 100%;
-    background: url('imagesweb/black pink.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    animation: animateBg 5s linear infinite;
-}
-
-@keyframes animateBg {
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-/* Other styles remain unchanged */
-
-.form {
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%, -5%);
-    border-radius: 50% solid rgb(202, 88, 183);
-    padding: 25px;
-}
-
-/* Adjusted for responsiveness */
-@media screen and (max-width: 600px) {
-    .form {
-        width: 90%; /* Adjusted width for smaller screens */
-        max-width: 90%; /* Maximum width for smaller screens */
-        left: 50%; /* Adjusted positioning for smaller screens */
-        transform: translateX(-50%); /* Centering horizontally for smaller screens */
     }
 }
