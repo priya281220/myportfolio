@@ -1,64 +1,67 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-.main {
+.main{
     width: 100%;
-    background: url('imagesweb/black pink.jpg');
+    background:url('imagesweb/black pink.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
-    animation: animateBg 5s linear infinite;
+    animation:animateBg 5s linear infinite;
 }
 
-@keyframes animateBg {
-    100% {
-        filter: hue-rotate(360deg);
+
+@keyframes animateBg{
+    100%{
+        filter:hue-rotate(360deg);
     }
-}
+    }
 
-.navbar {
-    width: 100%; /* Adjusted width for responsiveness */
+.navbar{
+    width: 1200px;
     height: 75px;
     margin: auto;
 }
 
-.icon {
+.icon{
     width: 200px;
     float: left;
     height: 70px;
 }
 
-.logo {
+.logo{
     color: #bd14df;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
-.menu {
-    display: none; /* Hide menu by default on small screens */
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
 }
 
-ul {
+ul{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul li {
+ul li{
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
     font-size: 14px;
 }
 
-ul li a {
+ul li a{
     text-decoration: none;
     color: #fff;
     font-family: Arial;
@@ -66,67 +69,66 @@ ul li a {
     transition: 0.4s ease-in-out;
 }
 
-ul li a:hover {
+ul li a:hover{
     color: #b614e7;
 }
 
-.search {
-    width: 100%; /* Adjusted width for responsiveness */
-    float: none; /* Float removed */
-    text-align: center; /* Center align the search */
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
 }
 
-.srch {
+.srch{
     font-family: 'Times New Roman';
     width: 200px;
     height: 40px;
     background: transparent;
     border: 1px solid #cc01cc;
-    margin: 13px auto; /* Center the search */
+    margin-top: 13px;
     color: #fff;
     border-right: none;
     font-size: 16px;
+    float: left;
     padding: 10px;
-    border-radius: 5px; /* Added border radius */
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.btn {
-    display: block; /* Display block for full width */
-    width: 200px; /* Adjusted width for responsiveness */
+.btn{
+    width: 100px;
     height: 40px;
     background: #8d028d;
     border: 2px solid #ff7af4;
-    margin: 13px auto; /* Center the button */
+    margin-top: 13px;
     color: #d376cb;
     font-size: 15px;
-    border-radius: 5px; /* Added border radius */
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: 0.2s ease;
     cursor: pointer;
 }
-
-.btn:hover {
+.btn:hover{
     color: #c975c5c5;
 }
 
-.btn:focus {
+.btn:focus{
     outline: none;
 }
 
-.srch:focus {
+.srch:focus{
     outline: none;
 }
 
-.content {
-    width: 100%; /* Adjusted width for responsiveness */
-    max-width: 1200px; /* Added max-width to limit content width */
+.content{
+    width: 1200px;
+    height: auto;
     margin: auto;
     color: #fff;
     position: relative;
-    padding: 0 20px; /* Added padding for better spacing */
-    box-sizing: border-box; /* Added box-sizing for padding calculation */
 }
 
-.content .par {
+.content .par{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
@@ -134,7 +136,7 @@ ul li a:hover {
     line-height: 30px;
 }
 
-.content h1 {
+.content h1{
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
@@ -142,7 +144,7 @@ ul li a:hover {
     letter-spacing: 2px;
 }
 
-.content .cn {
+.content .cn{
     width: 160px;
     height: 40px;
     background: #f2bdfd;
@@ -153,31 +155,38 @@ ul li a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
+    
 }
 
-.content .cn a {
+.content .cn a{
     text-decoration: none;
     color: #d46ccf;
     transition: .3s ease;
 }
 
-.cn:hover {
+.cn:hover{
     background-color: #eb8ee6;
 }
 
-.form {
-    width: 250px; /* Adjusted width */
-    height: 380px;
-    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
-    position: absolute;
-    top: 50%;
-    right: 20px; /* Adjusted positioning */
-    transform: translateY(-50%); /* Centering vertically */
-    border-radius: 20px; /* Adjusted border radius */
-    padding: 25px;
+.content span{
+    color: #bb6bc9;
+    font-size: 65px
 }
 
-.form h2 {
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(235, 141, 243, 0.849)50%,rgba(236, 126, 231, 0.8));
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 50% solid rgb(202, 88, 183);
+    padding: 25px;
+    
+}
+
+.form h2{
     width: 220px;
     font-family: sans-serif;
     text-align: center;
@@ -189,7 +198,7 @@ ul li a:hover {
     padding: 8px;
 }
 
-.form input {
+.form input{
     width: 240px;
     height: 35px;
     background: transparent;
@@ -204,16 +213,16 @@ ul li a:hover {
     font-family: sans-serif;
 }
 
-.form input:focus {
-    outline: #5e035e;
+.form input:focus{
+    outline:#5e035e;
 }
 
-::placeholder {
+::placeholder{
     color: #fff;
     font-family: Arial;
 }
 
-.btnn {
+.btnn{
     width: 240px;
     height: 40px;
     background: #940d8d;
@@ -225,111 +234,102 @@ ul li a:hover {
     color: #fff;
     transition: 0.4s ease;
 }
-
-.btnn:hover {
+.btnn:hover{
     background: #fff;
     color: #891b8d;
 }
-
-.btnn a {
+.btnn a{
     text-decoration: none;
     color: #06508b;
     font-weight: bold;
 }
-
-.form .link {
+.form .link{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
-
-.form .link a {
+.form .link a{
     text-decoration: none;
     color: #bd2eb6;
 }
-
-.liw {
+.liw{
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }
-
-.icons a {
+.icons a{
     text-decoration: none;
     color: #fff;
 }
-
-.icons ion-icon {
+.icons ion-icon{
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
     transition: 0.3s ease;
 }
-
-.icons ion-icon:hover {
-    color:
-#a63ed6;
+.icons ion-icon:hover{
+    color: #a63ed6;
 }
 
-.Certification {
+.Certification{
     background: #001233;
-}
-
-.Certification h2 {
+ }
+   
+ .Certification h2{
     margin-bottom: 4rem;
-}
+ }
 
-.Certification-container {
+ .Certification-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
-}
+ }
 
-.Certification-container .Certification-box {
+  .Certification-container .Certification-box{
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem #0ef;
+    box-shadow:0 0 1rem #0ef;
     overflow: hidden;
     display: flex;
-}
+  }
 
-.Certification-box img {
+  .Certification-box img{
     width: 100%;
-    transition: 0.5s ease;
-}
+    transition: .5s ease;
+  }
 
-.Certification-box:hover img {
-    transform: scale(1.1);
-}
+  .Certification-box:hover img{
+      transform: scale(1.1);
+  }
 
-.Certification-box .Certification-layer {
+  .Certification-box .Certification-layer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+    background: linear-gradient(rgba(0,0,0,.1),#0ef);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5s ease;
+     flex-direction: column;
+     text-align: center;
+     padding: 0 4rem;
+     transform: translateY(100%);
+     transition: .5s ease;
 }
 
-.Certification-box:hover .Certification-layer {
+.Certification-box:hover .Certification-layer{
     transform: translateY(0);
 }
-
-.Certification-layer h4 {
+.Certification-layer h4{
     font-size: 2rem;
 }
 
-.Certification-layer a {
+.Certification-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -339,70 +339,30 @@ ul li a:hover {
     border-radius: 50%;
 }
 
-.Certification-layer a i {
+.Certification-layer a i{
     font-size: 2rem;
-    color: #001233;
+    color:#001233;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .navbar {
-        height: auto; /* Adjust height to fit content */
-    }
 
-    .icon {
-        width: auto; /* Allow icon width to adjust */
-    }
+.form {
+    width: 250px; /* Adjusted width */
+    height: 380px;
+    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjusted positioning */
+    transform: translateY(-50%); /* Centering vertically */
+    border-radius: 20px; /* Adjusted border radius */
+    padding: 25px;
+}
 
-    .menu {
-        display: block; /* Display menu for smaller screens */
-        width: auto; /* Allow menu width to adjust */
-        float: none; /* Remove float */
-        margin-top: 10px; /* Add margin for spacing */
-    }
-
-    .menu ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /* Allow menu items to wrap */
-    }
-
-    .menu ul li {
-        margin: 10px; /* Adjust margin for spacing */
-    }
-
-    .search {
-        width: auto; /* Allow search width to adjust */
-        float: none; /* Remove float */
-        margin-left: 0; /* Remove left margin */
-        margin-top: 10px; /* Add margin for spacing */
-    }
-
-    .srch {
-        width: 150px; /* Adjust width for smaller screens */
-    }
-
-    .btn {
-        width: 150px; /* Adjust width for smaller screens */
-    }
-
-    .content h1 {
-        font-size: 40px; /* Adjust font size for smaller screens */
-    }
-
-    .content .par {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding-left: 10px; /* Adjust padding for smaller screens */
-    }
-
+/* Adjusted for responsive */
+@media screen and (max-width: 600px) {
     .form {
-        width: 90%; /* Adjust width for smaller screens */
-        max-width: 300px; /* Set maximum width for smaller screens */
-        left: 50%; /* Adjust left position for centering */
-        transform: translateX(-50%); /* Center horizontally */
-        top: 50%; /* Adjust top position for centering */
-        transform: translateY(-50%); /* Center vertically */
-        right: initial; /* Reset right property */
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: 300px; /* Maximum width for smaller screens */
+        right: 50%; /* Adjusted positioning for smaller screens */
+        transform: translate(50%, -50%); /* Centering horizontally for smaller screens */
     }
 }
