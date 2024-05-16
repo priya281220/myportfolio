@@ -19,7 +19,7 @@
 }
 
 .navbar {
-    width: 1200px;
+    width: 100%; /* Adjusted width for responsiveness */
     height: 75px;
     margin: auto;
 }
@@ -41,9 +41,7 @@
 }
 
 .menu {
-    width: 400px;
-    float: left;
-    height: 70px;
+    display: none; /* Hide menu by default on small screens */
 }
 
 ul {
@@ -73,9 +71,9 @@ ul li a:hover {
 }
 
 .search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
+    width: 100%; /* Adjusted width for responsiveness */
+    float: none; /* Float removed */
+    text-align: center; /* Center align the search */
 }
 
 .srch {
@@ -84,26 +82,24 @@ ul li a:hover {
     height: 40px;
     background: transparent;
     border: 1px solid #cc01cc;
-    margin-top: 13px;
+    margin: 13px auto; /* Center the search */
     color: #fff;
     border-right: none;
     font-size: 16px;
-    float: left;
     padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px; /* Added border radius */
 }
 
 .btn {
-    width: 100px;
+    display: block; /* Display block for full width */
+    width: 200px; /* Adjusted width for responsiveness */
     height: 40px;
     background: #8d028d;
     border: 2px solid #ff7af4;
-    margin-top: 13px;
+    margin: 13px auto; /* Center the button */
     color: #d376cb;
     font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px; /* Added border radius */
     transition: 0.2s ease;
     cursor: pointer;
 }
@@ -121,11 +117,13 @@ ul li a:hover {
 }
 
 .content {
-    width: 1200px;
-    height: auto;
+    width: 100%; /* Adjusted width for responsiveness */
+    max-width: 1200px; /* Added max-width to limit content width */
     margin: auto;
     color: #fff;
     position: relative;
+    padding: 0 20px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Added box-sizing for padding calculation */
 }
 
 .content .par {
@@ -167,20 +165,15 @@ ul li a:hover {
     background-color: #eb8ee6;
 }
 
-.content span {
-    color: #bb6bc9;
-    font-size: 65px
-}
-
 .form {
-    width: 250px;
+    width: 250px; /* Adjusted width */
     height: 380px;
     background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
     position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%, -5%);
-    border-radius: 50% solid rgb(202, 88, 183);
+    top: 50%;
+    right: 20px; /* Adjusted positioning */
+    transform: translateY(-50%); /* Centering vertically */
+    border-radius: 20px; /* Adjusted border radius */
     padding: 25px;
 }
 
@@ -276,7 +269,8 @@ ul li a:hover {
 }
 
 .icons ion-icon:hover {
-    color: #a63ed6;
+    color:
+#a63ed6;
 }
 
 .Certification {
@@ -303,7 +297,7 @@ ul li a:hover {
 
 .Certification-box img {
     width: 100%;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .Certification-box:hover img {
@@ -316,16 +310,15 @@ ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-direction: column;
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .Certification-box:hover .Certification-layer {
@@ -351,158 +344,65 @@ ul li a:hover {
     color: #001233;
 }
 
-.form {
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%, -5%);
-    border-radius: 50% solid rgb(202, 88, 183);
-    padding: 25px;
-}
-
-.form h2 {
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #8f0b63;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #801780;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus {
-    outline: #5e035e;
-}
-
-::placeholder {
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn {
-    width: 240px;
-    height: 40px;
-    background: #940d8d;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 50% solid rgb(138, 49, 146);
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-
-.btnn:hover {
-    background: #fff;
-    color: #891b8d;
-}
-
-.btnn a {
-    text-decoration: none;
-    color: #06508b;
-    font-weight: bold;
-}
-
-.form .link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.form .link a {
-    text-decoration: none;
-    color: #bd2eb6;
-}
-
-.liw {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.icons a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.icons ion-icon {
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-
-.icons ion-icon:hover {
-    color: #a63ed6;
-}
-
-.Certification {
-    background: #001233;
-}
-
-.Certification h2 {
-    margin-bottom: 4rem;
-}
-
-.Certification-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-}
-
 /* Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .main {
-        padding-top: 75px; /* Adjusted padding top to accommodate navbar */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto; /* Adjust height to fit content */
     }
 
-    .navbar {
-        width: 100%; /* Adjusted width for responsiveness */
+    .icon {
+        width: auto; /* Allow icon width to adjust */
     }
 
     .menu {
-        display: none; /* Hide menu on small screens */
+        display: block; /* Display menu for smaller screens */
+        width: auto; /* Allow menu width to adjust */
+        float: none; /* Remove float */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow menu items to wrap */
+    }
+
+    .menu ul li {
+        margin: 10px; /* Adjust margin for spacing */
     }
 
     .search {
-        width: 100%; /* Adjusted width for responsiveness */
-        margin-left: 0; /* Removed margin-left */
+        width: auto; /* Allow search width to adjust */
+        float: none; /* Remove float */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add margin for spacing */
     }
 
     .srch {
-        width: calc(100% - 120px); /* Adjusted width to fit in the available space */
+        width: 150px; /* Adjust width for smaller screens */
+    }
+
+    .btn {
+        width: 150px; /* Adjust width for smaller screens */
     }
 
     .content h1 {
-        font-size: 40px; /* Adjusted font size for smaller screens */
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .content .par {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding-left: 10px; /* Adjust padding for smaller screens */
     }
 
     .form {
-        width: 90%; /* Adjusted width for responsiveness */
-        max-width: 300px; /* Maximum width for smaller screens */
-        right: 50%; /* Adjusted positioning for smaller screens */
-        transform: translate(50%, -50%); /* Centering horizontally for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set maximum width for smaller screens */
+        left: 50%; /* Adjust left position for centering */
+        transform: translateX(-50%); /* Center horizontally */
+        top: 50%; /* Adjust top position for centering */
+        transform: translateY(-50%); /* Center vertically */
+        right: initial; /* Reset right property */
     }
 }
