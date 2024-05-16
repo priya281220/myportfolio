@@ -173,7 +173,6 @@ ul li a:hover{
     font-size: 65px
 }
 
-
 .form {
     width: 90%; /* Adjusted width for smaller screens */
     max-width: 300px; /* Maximum width for smaller screens */
@@ -181,8 +180,6 @@ ul li a:hover{
     background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
     position: relative; /* Change position to relative */
     margin: auto; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Center vertically */
     border-radius: 20px;
     padding: 25px;
 }
@@ -192,7 +189,10 @@ ul li a:hover{
     .form {
         width: 90%; /* Adjusted width for smaller screens */
         max-width: 90%; /* Maximum width for smaller screens */
-        margin-top: 20px; /* Add some space at the top */
+        position: absolute; /* Change position to absolute */
+        left: 50%; /* Center horizontally */
+        top: 50%; /* Center vertically */
+        transform: translate(-50%, -50%); /* Center both horizontally and vertically */
     }
 }
 
