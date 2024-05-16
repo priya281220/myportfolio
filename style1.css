@@ -173,21 +173,53 @@ ul li a:hover{
     font-size: 65px
 }
 
-
-.form {
-    width: 90%; /* Adjusted width for smaller screens */
-    max-width: 300px; /* Maximum width for smaller screens */
-    margin: auto; /* Center horizontally */
-    border-radius: 20px;
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(235, 141, 243, 0.849)50%,rgba(236, 126, 231, 0.8));
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 50% solid rgb(202, 88, 183);
     padding: 25px;
+    
 }
 
-/* Adjusted for responsiveness */
-@media screen and (max-width: 600px) {
-    .form {
-        width: 90%; /* Adjusted width for smaller screens */
-        max-width: 90%; /* Maximum width for smaller screens */
-    }
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #8f0b63;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #801780;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline:#5e035e;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
 }
 
 .btnn{
