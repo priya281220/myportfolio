@@ -343,3 +343,26 @@ ul li a:hover{
     font-size: 2rem;
     color:#001233;
 }
+
+
+.form {
+    width: 250px; /* Adjusted width */
+    height: 380px;
+    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjusted positioning */
+    transform: translateY(-50%); /* Centering vertically */
+    border-radius: 20px; /* Adjusted border radius */
+    padding: 25px;
+}
+
+/* Adjusted for responsive */
+@media screen and (max-width: 600px) {
+    .form {
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: 300px; /* Maximum width for smaller screens */
+        right: 50%; /* Adjusted positioning for smaller screens */
+        transform: translate(50%, -50%); /* Centering horizontally for smaller screens */
+    }
+}
