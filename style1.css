@@ -195,41 +195,6 @@ ul li a:hover{
         margin-top: 20px; /* Add some space at the top */
     }
 }
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #8f0b63;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #801780;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus{
-    outline:#5e035e;
-}
-
-::placeholder{
-    color: #fff;
-    font-family: Arial;
-}
 
 .btnn{
     width: 240px;
