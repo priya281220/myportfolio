@@ -173,19 +173,28 @@ ul li a:hover{
     font-size: 65px
 }
 
-.form{
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(235, 141, 243, 0.849)50%,rgba(236, 126, 231, 0.8));
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
-    border-radius: 50% solid rgb(202, 88, 183);
+
+.form {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Maximum width for smaller screens */
+    height: auto; /* Adjust height to fit content */
+    background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
+    position: relative; /* Change position to relative */
+    margin: auto; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    border-radius: 20px;
     padding: 25px;
-    
 }
 
+/* Adjusted for responsiveness */
+@media screen and (max-width: 600px) {
+    .form {
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: 90%; /* Maximum width for smaller screens */
+        margin-top: 20px; /* Add some space at the top */
+    }
+}
 .form h2{
     width: 220px;
     font-family: sans-serif;
