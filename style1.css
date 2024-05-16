@@ -345,18 +345,20 @@ ul li a:hover{
 }
 
 
+
+
 .form {
-    width: 250px; /* Adjusted width */
-    height: 380px;
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Maximum width for smaller screens */
+    height: auto; /* Adjust height to fit content */
     background: linear-gradient(to top, rgba(235, 141, 243, 0.849) 50%, rgba(236, 126, 231, 0.8));
-    position: absolute;
-    top: 50%;
-    right: 20px; /* Adjusted positioning */
-    transform: translateY(-50%); /* Centering vertically */
-    border-radius: 20px; /* Adjusted border radius */
+    position: relative; /* Change position to relative */
+    margin: auto; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    border-radius: 20px;
     padding: 25px;
 }
-
 /* Adjusted for responsive */
 @media screen and (max-width: 600px) {
     .form {
